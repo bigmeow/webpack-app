@@ -1,0 +1,29 @@
+{
+  "name": "webPack",
+  "version": "1.0.0",
+  "description": "webpack-App",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --display-error-details --colors --watch --inline --hot --content-base build",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "author": "running",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "bundle-loader": "^0.5.4",
+    "css-loader": "^0.23.1",
+    "ejs-loader": "^0.2.1",
+    "file-loader": "^0.8.5",
+    "glob": "^7.0.3",
+    "html-webpack-plugin": "^2.10.0",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
+  }
+}
